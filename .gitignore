@@ -6,8 +6,9 @@
 
 !/assets/
 /assets/*
-!/assets/model_architecture.png
-!/assets/prediction_example.png
+!/assets/method.jpg
+!/assets/compare_all_regions_temp.jpg
+!/assets/compare_all_regions_ppt.jpg
 
 !/dataset/
 /dataset/*

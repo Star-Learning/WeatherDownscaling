@@ -4,15 +4,21 @@ Official PyTorch implementation of **DriveGuard-WM: Dynamic-Only Cross-Region Me
 
 DriveGuard-WM studies strict single-source zero-shot transfer: the model is trained with dynamic low-resolution (LR) weather sequences and paired high-resolution (HR) targets in one region, then deployed in unseen regions using dynamic LR inputs only. The method combines a hierarchical world model, source-only state/relation diagnosis, an LR-only relation student, dual prediction paths, and a monotone risk guard.
 
-![DriveGuard-WM architecture](assets/model_architecture.png)
+![DriveGuard-WM architecture](assets/method.jpg)
 
 Across six directed transfers among Australia, CONUS, and Europe, DriveGuard-WM reduces normalized macro MAE over the strongest common-protocol baseline by **38.6% for temperature** and **46.0% for precipitation**.
 
-### Example prediction
+### Prediction examples
 
-The figure below shows a representative CONUS temperature result from the conservative historical path. Raw predictions and evaluation outputs are not included in this repository.
+Temperature:
 
-![Representative DriveGuard-WM prediction](assets/prediction_example.png)
+![Temperature prediction comparison across regions](assets/compare_all_regions_temp.jpg)
+
+Precipitation:
+
+![Precipitation prediction comparison across regions](assets/compare_all_regions_ppt.jpg)
+
+Raw predictions and evaluation outputs are not included in this repository.
 
 ## Installation
 
